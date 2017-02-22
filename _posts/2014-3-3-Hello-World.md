@@ -3,5 +3,6 @@ layout: post
 title: My projects
 ---
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
- [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+ [realtime-tweeter-nlp-sentiment](https://github.com/christophe77/realtime-tweeter-nlp-sentiment)
+ [yammer-group-feeder](https://github.com/christophe77/yammer-group-feeder)
+ [realtime-tweeter-post-to-yammer](https://github.com/christophe77/realtime-tweeter-post-to-yammer)
