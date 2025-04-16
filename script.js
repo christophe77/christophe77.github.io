@@ -2,7 +2,7 @@ const content = {
     fr: {
       role: 'Développeur JS | React | Next | Node',
       quote: 'Je débogue comme je respire. Et parfois, je respire fort.',
-      stackTitle: 'Mon stack préféré',
+      stackTitle: 'Mes jouets préférés',
       reactText: 'Pour briller côté front (avec un soupçon de magie ✨)',
       nextText: 'Parce que SSR c’est sexy et Google adore ça 😎',
       nodeText: 'JS jusqu’au bout du backend (et même sous le tapis)',
