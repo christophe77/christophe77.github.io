@@ -9,6 +9,7 @@ const content = {
     nodeText: 'JS jusqu’au bout du backend (et même sous le tapis)',
     expressText: 'Express pour aller vite... comme une 206 tunée 🚗💨',
     muiText: 'Parce que les composants stylés, c’est la vie 💅',
+    sbText: 'Parce que les composants stylés ET réutilisables, c’est encore plus cool 😎',
     tailwindText: 'Pour faire du CSS sans pleurer dans un coin 💨😢',
     linkedinBtn: '🔗 Suivez-moi sur LinkedIn',
     reposBtn: '📁 Voir mes repos',
@@ -23,6 +24,7 @@ const content = {
     expoText: "Because 3 platforms with 1 project saves time (and I'm lazy 💤)",
     expressText: 'Express to go fast... like a turbo snail 🐌💨',
     muiText: 'Because stylish components make the dev world go round 💅',
+    sbText: 'Because stylish AND reusable components are way more cool bro 😎',
     tailwindText: 'For styling without crying in the CSS corner 💨😢',
     linkedinBtn: '🔗 Follow me on LinkedIn',
     reposBtn: '📁 Browse my repos',
@@ -37,6 +39,7 @@ const content = {
     nodeText: 'JS hasta el fondo (¡incluso debajo del sofá!)',
     expressText: 'Express para ir rápido... como un caracol con turbo 🐌💨',
     muiText: 'Componentes con estilo = desarrollador feliz 💅',
+    sbText: 'Porque los componentes elegantes y reutilizables son mucho más geniales, hermano 😎',
     tailwindText: 'CSS sin drama... o casi 💨😅',
     linkedinBtn: '🔗 Sígueme en LinkedIn',
     reposBtn: '📁 Ver mis repos',
@@ -49,6 +52,7 @@ function setLang(lang) {
   document.getElementById('stackTitle').textContent = content[lang].stackTitle;
   document.getElementById('reactText').textContent = content[lang].reactText;
   document.getElementById('nextText').textContent = content[lang].nextText;
+  document.getElementById('sbText').textContent = content[lang].sbText;
   document.getElementById('expoText').textContent = content[lang].expoText;
   document.getElementById('nodeText').textContent = content[lang].nodeText;
   document.getElementById('expressText').textContent = content[lang].expressText;
