@@ -3,75 +3,113 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Christophe Bellec - JS Dev</title>
-		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Christophe Bellec — Software architect & fullstack dev</title>
+		<meta
+			name="description"
+			content="Christophe Bellec — Architecte logiciel & développeur fullstack TypeScript, Node, React. Freelance à Paris."
+		/>
+		<meta property="og:title" content="Christophe Bellec — Software architect & fullstack dev" />
+		<meta property="og:description" content="TypeScript, Node, React. Honeypots for bots and MCP servers for thermostats." />
+		<meta property="og:image" content="https://christophe77.github.io/assets/images/cb-anime.jpg" />
+		<meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)" />
+		<link rel="icon" href="./assets/images/cb-anime.jpg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body class="flex flex-col items-center justify-center min-h-screen p-4">
-		<!-- Language Switcher -->
-		<div class="absolute top-4 right-4 space-x-2 text-xl">
-			<button onclick="setLang('fr')">🇫🇷</button>
-			<button onclick="setLang('en')">🇬🇧</button>
-			<button onclick="setLang('es')">🇪🇸</button>
-		</div>
-
-		<!-- Header -->
-		<header class="text-center flex flex-col items-center">
-			<img
-				src="./assets/images/cb-anime.jpg"
-				alt="avatar"
-				class="w-32 h-32 mb-4 rounded-full shadow-md"
-			/>
-			<h1 class="text-3xl font-bold mb-2">Christophe Bellec</h1>
-			<p class="text-xl text-gray-700" id="role"></p>
+	<body>
+		<header class="topbar">
+			<a href="#top" class="mark" aria-label="Christophe Bellec">cb<span>.</span></a>
+			<div class="controls">
+				<div class="lang" role="group" aria-label="Language">
+					<button type="button" data-lang="fr">FR</button>
+					<button type="button" data-lang="en">EN</button>
+					<button type="button" data-lang="es">ES</button>
+				</div>
+				<button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+					<svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+					<svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+				</button>
+			</div>
 		</header>
 
-		<!-- Fun Quote -->
-		<section
-			class="mt-6 mb-4 text-center text-lg italic text-orange-600"
-			id="quote"
-		></section>
+		<main id="top">
+			<!-- Hero -->
+			<section class="hero">
+				<div class="hero-text">
+					<p class="eyebrow mono">
+						<span class="dot" aria-hidden="true"></span>
+						<span data-i18n="status"></span>
+					</p>
+					<h1>Christophe<br />Bellec</h1>
+					<p class="role" data-i18n="role"></p>
+					<p class="tagline" data-i18n="tagline"></p>
+					<div class="cta">
+						<a class="btn btn-primary" href="https://github.com/christophe77" target="_blank" rel="noopener">
+							<svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+							<span data-i18n="reposBtn"></span>
+						</a>
+						<a
+							class="btn"
+							href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=christophe-bellec-3b5518291"
+							target="_blank"
+							rel="noopener"
+						>
+							<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+							<span data-i18n="linkedinBtn"></span>
+						</a>
+					</div>
+				</div>
+				<figure class="avatar">
+					<img src="./assets/images/cb-anime.jpg" alt="Christophe Bellec" width="320" height="320" />
+					<figcaption class="mono" data-i18n="quote"></figcaption>
+				</figure>
+			</section>
 
-		<!-- Follow Buttons -->
-		<div class="flex flex-col sm:flex-row gap-4 mt-2">
-			<a
-				id="linkedinBtn"
-				href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=christophe-bellec-3b5518291"
-				target="_blank"
-				class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition"
-			>
-				🔗 Suivez-moi sur LinkedIn
-			</a>
-			<a
-				id="reposBtn"
-				href="https://github.com/christophe77?tab=repositories"
-				target="_blank"
-				class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-full transition"
-			>
-				📁 Browse my repos
-			</a>
-		</div>
+			<!-- Stats -->
+			<section class="stats" aria-label="GitHub">
+				<div><strong id="statRepos">60+</strong><span data-i18n="statRepos"></span></div>
+				<div><strong id="statStars">40+</strong><span data-i18n="statStars"></span></div>
+				<div><strong id="statYears">10</strong><span data-i18n="statYears"></span></div>
+				<div><strong>∞</strong><span data-i18n="statMate"></span></div>
+			</section>
 
-		<!-- Tech Stack -->
-		<section class="mt-10 max-w-md">
-			<h2 class="text-2xl font-bold mb-4 text-center" id="stackTitle">
-				Technical Stack
-			</h2>
-			<ul class="space-y-3">
-				<li>⚛️ <b>React</b> <br /><span id="reactText"></span></li>
-				<li>🚀 <b>Next</b><br /><span id="nextText"></span></li>
-				<li>📱 <b>Expo</b><br /><span id="expoText"></span></li>
-				<li>🌳 <b>Node</b><br /><span id="nodeText"></span></li>
-				<li>🧃 <b>Express</b><br /><span id="expressText"></span></li>
-				<li>📚 <b>Storybook</b><br /><span id="sbText"></span></li>
-				<li>🎨 <b>Material UI</b><br /><span id="muiText"></span></li>
-				<li>💨 <b>Tailwind CSS</b> <br /><span id="tailwindText"></span></li>
-			</ul>
-		</section>
+			<!-- Projects -->
+			<section class="block" id="projects">
+				<div class="block-head">
+					<h2 data-i18n="projectsTitle"></h2>
+					<p data-i18n="projectsSub"></p>
+				</div>
+				<div class="filters" role="group" aria-label="Filter">
+					<button type="button" class="active" data-filter="all" data-i18n="fAll"></button>
+					<button type="button" data-filter="ai">IA / MCP</button>
+					<button type="button" data-filter="sec" data-i18n="fSec"></button>
+					<button type="button" data-filter="lib" data-i18n="fLib"></button>
+					<button type="button" data-filter="dx">DX</button>
+				</div>
+				<div class="grid" id="projectGrid"></div>
+				<a class="more mono" href="https://github.com/christophe77?tab=repositories" target="_blank" rel="noopener">
+					<span data-i18n="moreRepos"></span> →
+				</a>
+			</section>
 
-		<!-- Footer -->
-		<footer class="mt-10 text-gray-500 text-sm">
-			<p>© 2025 Christophe Bellec — Powered by maté 🧉 et windows 3.11 ☕️</p>
+			<!-- Stack -->
+			<section class="block" id="stack">
+				<div class="block-head">
+					<h2 data-i18n="stackTitle"></h2>
+					<p data-i18n="stackSub"></p>
+				</div>
+				<ul class="stack" id="stackList"></ul>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p>© <span id="year">2026</span> Christophe Bellec — <span data-i18n="footer"></span></p>
 		</footer>
 
 		<script src="script.js"></script>
